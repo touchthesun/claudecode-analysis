@@ -10,8 +10,9 @@ This documentation set maps the `src/` codebase of Claude Code, including archit
 4. [Design Patterns](design-patterns.md)
 5. [Architecture Decisions](architecture-decisions.md)
 6. [External Findings Cross-Check](external-findings-cross-check.md)
-7. [Key Capabilities](key-capabilities.md)
-8. [Glossary](glossary.md)
+7. [Anti-Patterns System Design Review](anti-patterns-system-design-review.md)
+8. [Key Capabilities](key-capabilities.md)
+9. [Glossary](glossary.md)
 
 ## What this map covers
 
@@ -19,6 +20,7 @@ This documentation set maps the `src/` codebase of Claude Code, including archit
 - Execution modes and startup/interactive runtime paths
 - How query/tool orchestration works
 - Notable design patterns and architectural tradeoffs
+- Critical anti-patterns and "what not to do" examples
 - Cross-checked notable external findings with source-backed validation
 - Where key product capabilities are implemented
 
