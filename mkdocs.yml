@@ -1,0 +1,46 @@
+site_name: Claude Code Source Map
+site_description: Architecture and source map documentation for Claude Code
+docs_dir: docs
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - content.code.copy
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+nav:
+  - Home: index.md
+  - Architecture Overview: architecture-overview.md
+  - Runtime Flow: runtime-flow.md
+  - Module Map: module-map.md
+  - Design Patterns: design-patterns.md
+  - Architecture Decisions: architecture-decisions.md
+  - External Findings Cross-Check: external-findings-cross-check.md
+  - Key Capabilities: key-capabilities.md
+  - Glossary: glossary.md
